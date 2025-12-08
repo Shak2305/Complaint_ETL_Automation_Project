@@ -3,7 +3,7 @@ End-to-End Data Pipeline: Excel → Power Query → Automated Exports → SQL St
 
 -------------
 
-## 📌 Overview
+## Overview
 
 This project demonstrates a complete production-style ETL pipeline for a complaint management dataset.  
 It showcases how raw operational data is extracted, cleaned, transformed, validated, automated, and loaded into a SQL environment — ready for BI analytics and KPI reporting.
@@ -17,9 +17,9 @@ Contact centres, financial services, regulatory reporting, MI/BI teams, and oper
 
 -------------
 
-## 🚀 End-to-End Architecture
+## End-to-End Architecture
 
-## 🧩 Technologies Used
+## Technologies Used
 
 ### 🔹 Data Transformation  
 - Power Query (M)  
@@ -48,44 +48,44 @@ Contact centres, financial services, regulatory reporting, MI/BI teams, and oper
 
 -------------
 
-## 📁 Repository Structure
+## Repository Structure
 
 Complaint_ETL_Automation_Project/
-│
-├── 01_Datasets/ → Sample complaint, Jira, and attrition datasets
-│
-├── 02_PowerQuery/ → All M scripts used for ETL transformations
-│ ├── complaints_raw.m
-│ ├── complaints_clean.m
-│ ├── complaints_enriched.m
-│ ├── complaints_categories_long.m
-│ ├── fact_complaints.m
-│ ├── dim_category.m
-│ ├── dim_status.m
-│ ├── dim_person.m
-│ └── jira_transformations.m
-│
-├── 03_VBA/ → Automated CSV export scripts
-│ └── csv_export.bas
-│
-├── 04_SQL/ → SQL components
-│ ├── staging/
-│ │ └── stg_tbl_fact_complaints.sql
-│ ├── raw/
-│ │ └── raw_tbl_fact_complaints.sql
-│ └── push/
-│ └── data_push_script.sql
-│
-└── 05_PowerBI/ → Power BI dashboards & model (coming next)
-├── dashboards.png
-├── data_model.png
-└── measures.md
+
+ 01_Datasets/ → Sample complaint, Jira, and attrition datasets
+
+ 02_PowerQuery/ → All M scripts used for ETL transformations
+ ├── complaints_raw.m
+ ├── complaints_clean.m
+ ├── complaints_enriched.m
+ ├── complaints_categories_long.m
+ ├── fact_complaints.m
+ ├── dim_category.m
+ ├── dim_status.m
+ ├── dim_person.m
+ └── jira_transformations.m
+
+ 03_VBA/ → Automated CSV export scripts
+ └── csv_export.bas
+
+ 04_SQL/ → SQL components
+ ├── staging/
+        └── stg_tbl_fact_complaints.sql
+ ├── raw/
+        └── raw_tbl_fact_complaints.sql
+ ├── push/
+        └── data_push_script.sql
+
+ 05_PowerBI/ → Power BI dashboards & model (coming next)
+ ├── dashboards.png
+ ├── data_model.png
+ └── measures.md
 
 -------------
 
-## 🔧 Key Components of This Project
+## Key Components of This Project
 
-### ✅ 1. Power Query Data Cleaning & Shaping  
+### 1. Power Query Data Cleaning & Shaping  
 
 Includes:
 
@@ -117,7 +117,7 @@ Includes:
 
 ---
 
-### ✅ 2. VBA Automation (Daily CSV Extractor)
+### 2. VBA Automation (Daily CSV Extractor)
 
 The VBA module:
 
@@ -131,7 +131,7 @@ This replicates a real-world daily feed for ingestion pipelines.
 
 ---
 
-### ✅ 3. SQL Staging & RAW Layers
+### 3. SQL Staging & RAW Layers
 
 #### **Staging Table**
 - No constraints  
@@ -156,7 +156,7 @@ This mirrors enterprise-grade ingestion logic.
 
 ---
 
-## 📊 Power BI Analytics Layer (Coming Next)
+## Power BI Analytics Layer (Coming Next)
 
 This project supports:
 
@@ -172,7 +172,7 @@ The Power BI models will be added in `/05_PowerBI/`.
 
 ---
 
-## 🧑‍💼 Purpose of This Project
+## Purpose of This Project
 
 This project showcases the ability to:
 
@@ -192,9 +192,26 @@ This portfolio demonstrates skills valuable for:
 - Reporting Automation Consultant  
 - Data Engineering Support  
 
----
+----------
 
-## 📬 Contact
+## Skills Demonstrated
+
+- ETL architecture design (Bronze/Silver/Gold)
+- Power Query M-language transformations
+- Data standardisation & cleansing
+- VBA automation for scheduled exports
+- CSV → SQL ingestion pipelines
+- Staging and raw-layer modelling
+- Incremental load and MERGE logic
+- KPI & SLA calculation frameworks
+- Power BI data modelling
+- Operational analytics (contact centre)
+
+
+-----------
+
+
+## Contact
 
 For freelance work, automation, dashboards, or data engineering:
 
