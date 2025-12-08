@@ -51,35 +51,35 @@ Contact centres, financial services, regulatory reporting, MI/BI teams, and oper
 ## Repository Structure
 
 Complaint_ETL_Automation_Project/
-
- 01_Datasets/ → Sample complaint, Jira, and attrition datasets
-
- 02_PowerQuery/ → All M scripts used for ETL transformations
- ├── complaints_raw.m
- ├── complaints_clean.m
- ├── complaints_enriched.m
- ├── complaints_categories_long.m
- ├── fact_complaints.m
- ├── dim_category.m
- ├── dim_status.m
- ├── dim_person.m
- └── jira_transformations.m
-
- 03_VBA/ → Automated CSV export scripts
- └── csv_export.bas
-
- 04_SQL/ → SQL components
- ├── staging/
-        └── stg_tbl_fact_complaints.sql
- ├── raw/
-        └── raw_tbl_fact_complaints.sql
- ├── push/
-        └── data_push_script.sql
-
- 05_PowerBI/ → Power BI dashboards & model (coming next)
- ├── dashboards.png
- ├── data_model.png
- └── measures.md
+│
+├── 01_Datasets/                     # Sample complaint, Jira, and attrition datasets
+│
+├── 02_PowerQuery/                   # All M scripts used for ETL transformations
+│   ├── complaints_raw.m
+│   ├── complaints_clean.m
+│   ├── complaints_enriched.m
+│   ├── complaints_categories_long.m
+│   ├── fact_complaints.m
+│   ├── dim_category.m
+│   ├── dim_status.m
+│   ├── dim_person.m
+│   └── jira_transformations.m
+│
+├── 03_VBA/                           # Automated CSV export scripts
+│   └── csv_export.bas
+│
+├── 04_SQL/                           # SQL components
+│   ├── staging/
+│   │   └── stg_tbl_fact_complaints.sql
+│   ├── raw/
+│   │   └── raw_tbl_fact_complaints.sql
+│   └── push/
+│       └── data_push_script.sql
+│
+└── 05_PowerBI/                       # Power BI dashboards & model (coming next)
+    ├── dashboards.png
+    ├── data_model.png
+    └── measures.md
 
 -------------
 
