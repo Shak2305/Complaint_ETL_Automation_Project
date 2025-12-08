@@ -146,7 +146,7 @@ This replicates a real-world daily feed for ingestion pipelines.
 #### **Incremental Load Script**
 - Deletes only existing rows for `LOGGED_ON = yesterday`  
 - Inserts new rows from staging  
-- Handles Excel date serial issues (`DATE '1899-12-30' + SERIAL`)  
+- Handles Excel date serial issues  
 - Maintains `LOAD_DATE` audit column  
 - Deduplicates based on CASE_ID & LOGGED_ON  
 
